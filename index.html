@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust India - Explore Indian Destinations</title>
+    <!-- FontAwesome for Navigation & Filter Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Layout -->
+    <header class="navbar">
+        <div class="nav-container">
+            <!-- Custom Brand Logo -->
+            <div class="logo">
+                <i class="fa-solid fa-paper-plane logo-icon"></i>
+                <span>VentureVibe<small>India</small></span>
+            </div>
+
+            <!-- Horizontal Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#destinations"><i class="fa-solid fa-location-dot"></i> Destinations</a></li>
+                    <li><a href="#hotels"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                    <li><a href="#restaurants"><i class="fa-solid fa-utensils"></i> Restaurants</a></li>
+                    <li><a href="#flights"><i class="fa-solid fa-plane"></i> Flights</a></li>
+                </ul>
+            </nav>
+
+            <!-- Sign In Action Button -->
+            <div class="nav-actions">
+                <a href="#contact-page" class="btn-primary">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero & Search Section with Filters -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Discover the Soul of India</h1>
+                <p>Plan your perfect getaway with authentic stays, curated dining, and breathtaking destinations.</p>
+
+                <!-- Search Filter Form -->
+                <div class="search-box">
+                    <div class="input-group">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Where do you want to go?">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <select>
+                            <option value="">Price Range</option>
+                            <option value="low">Budget (Under ₹3,000)</option>
+                            <option value="mid">Mid-Range (₹3,000 - ₹8,000)</option>
+                            <option value="high">Luxury (₹8,000+)</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <select>
+                            <option value="">Rating</option>
+                            <option value="5">5 Star Rated</option>
+                            <option value="4">4 Star & Above</option>
+                            <option value="3">3 Star & Above</option>
+                        </select>
+                    </div>
+
+                    <button class="search-btn">Search Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Destinations Section -->
+        <section class="listings-section" id="destinations">
+            <div class="section-title">
+                <h2>Featured Destinations</h2>
+                <p>Top trending travel locations across India</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600" alt="Taj Mahal, Agra">
+                        <span class="badge">Must Visit</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Taj Mahal, Agra</h3>
+                        <div class="card-meta">
+                            <span class="rating">★★★★★ 4.9 (4,850 reviews)</span>
+                        </div>
+                        <p class="desc">Experience the grand marble mausoleum and rich Mughal history in Uttar Pradesh.</p>
+                        <div class="card-footer">
+                            <span class="price">From <strong>₹1,500</strong> / person</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600" alt="Alleppey Backwaters">
+                        <span class="badge">Nature</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Backwaters, Alleppey</h3>
+                        <div class="card-meta">
+                            <span class="rating">★★★★☆ 4.8 (3,940 reviews)</span>
+                        </div>
+                        <p class="desc">Sail through peaceful canals and lush green landscapes on private houseboats.</p>
+                        <div class="card-footer">
+                            <span class="price">From <strong>₹6,200</strong> / day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600" alt="Pangong Lake, Ladakh">
+                        <span class="badge">Adventure</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Pangong Lake, Ladakh</h3>
+                        <div class="card-meta">
+                            <span class="rating">★★★★★ 4.9 (2,950 reviews)</span>
+                        </div>
+                        <p class="desc">Marvel at the crystal clear high-altitude salt lake surrounded by majestic mountains.</p>
+                        <div class="card-footer">
+                            <span class="price">From <strong>₹12,000</strong> / trip</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Stays & Hotels Section -->
+        <section class="listings-section alt-bg" id="hotels">
+            <div class="section-title">
+                <h2>Popular Stays & Heritage Hotels</h2>
+                <p>Comfortable stays and luxury heritage palaces</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600" alt="Taj Lake Palace">
+                        <span class="badge luxury">Luxury Stay</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Taj Lake Palace, Udaipur</h3>
+                        <div class="card-meta">
+                            <span class="rating">★★★★★ 5.0 (2,120 reviews)</span>
+                        </div>
+                        <p class="desc">Floating luxury palace hotel in the middle of Lake Pichola with royal suites.</p>
+                        <div class="card-footer">
+                            <span class="price">From <strong>₹28,500</strong> / night</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600" alt="Baga Beach Resort">
+                        <span class="badge">Beachfront</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Baga Beach Resort, Goa</h3>
+                        <div class="card-meta">
+                            <span class="rating">★★★★☆ 4.7 (5,410 reviews)</span>
+                        </div>
+                        <p class="desc">Relaxing seaside resort with private beach access, pool, and water sports activities.</p>
+                        <div class="card-footer">
+                            <span class="price">From <strong>₹4,999</strong> / night</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=600" alt="Varanasi Heritage Villa">
+                        <span class="badge">Heritage</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Ganges View Heritage, Varanasi</h3>
+                        <div class="card-meta">
+                            <span class="rating">★★★★☆ 4.6 (1,820 reviews)</span>
+                        </div>
+                        <p class="desc">Traditional boutique hotel offering stunning rooftop views of Ganga Aarti.</p>
+                        <div class="card-footer">
+                            <span class="price">From <strong>₹3,500</strong> / night</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top-Rated Restaurants Section -->
+        <section class="listings-section" id="restaurants">
+            <div class="section-title">
+                <h2>Top-Rated Restaurants</h2>
+                <p>Taste authentic Indian cuisines and fine dining</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 7 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Peshawri Restaurant">
+                        <span class="badge food">Fine Dining</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Peshawri, Mumbai</h3>
+                        <div class="card-meta">
+                            <span class="rating">★★★★★ 4.9 (1,240 reviews)</span>
+                        </div>
+                        <p class="desc">Famous North-West Frontier tandoori delicacies and authentic Dal Bukhara.</p>
+                        <div class="card-footer">
+                            <span class="price">Avg <strong>₹2,500</strong> / 2 persons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600" alt="Karavalli Bangalore">
+                        <span class="badge food">South Indian</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Karavalli, Bengaluru</h3>
+                        <div class="card-meta">
+                            <span class="rating">★★★★★ 4.8 (2,150 reviews)</span>
+                        </div>
+                        <p class="desc">Celebrated coastal cuisine serving Mangalorean, Malabar, and Goan specialties.</p>
+                        <div class="card-footer">
+                            <span class="price">Avg <strong>₹3,000</strong> / 2 persons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600" alt="Indian Accent Delhi">
+                        <span class="badge food">Contemporary</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Indian Accent, New Delhi</h3>
+                        <div class="card-meta">
+                            <span class="rating">★★★★★ 5.0 (3,400 reviews)</span>
+                        </div>
+                        <p class="desc">Award-winning Indian restaurant reinterpreting traditional flavors with modern flair.</p>
+                        <div class="card-footer">
+                            <span class="price">Avg <strong>₹5,000</strong> / 2 persons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page Section (At the End) -->
+        <section class="contact-section" id="contact-page">
+            <div class="contact-container">
+                <h2>Plan Your Next Journey With Us</h2>
+                <p>Have questions or need assistance with custom itineraries? Get in touch with our travel planners.</p>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Full Name" required>
+                        <input type="email" placeholder="Your Email Address" required>
+                    </div>
+                    <input type="text" placeholder="Subject / Preferred Destination">
+                    <textarea rows="4" placeholder="Tell us about your travel plans..." required></textarea>
+                    <button type="submit" class="submit-btn">Send Enquiry</button>
+                </form>
+
+                <div class="contact-details">
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>VentureVibe.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Bengaluru & New Delhi, India</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fa-solid fa-paper-plane logo-icon"></i>
+                    <span>VentureVibe<small>India</small></span>
+                </div>
+                <p>Your ultimate companion for discovering handpicked places, hotels, and dining experiences across India.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Venturevibe. All rights reserved. Created for educational submission.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
