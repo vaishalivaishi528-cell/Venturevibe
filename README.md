@@ -16,16 +16,16 @@ Venture is a travel website designed to help users explore popular destinations 
 
 Technologies Used
 
-- HTML5 – Used to create the structure and content of the website.
-- CSS3 – Used for styling, layouts, colors, animations, and visual effects.
-
+- HTML
+- CSS
+  
 Project Objective
 
 The main objective of this project is to create an engaging travel website that allows users to explore destinations and learn about travel options through a visually appealing interface.
 
  Live Website
 
-Explore my website here: "View Venture Website" 
+Explore my website here: "View Venture Website" https://vaishalivaishi528-cell.github.io/Venturevibe/
 
  Developed By
 
